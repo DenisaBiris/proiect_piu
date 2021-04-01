@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Evenimente</title>
+<script src="javascript/javascript-index.js"></script>
+	<link type='text/css' rel='stylesheet' href='css/evenimente.css' /><meta charset="UTF-8">
+</head>
+
+<body>
+
+	<div class="coffe-image">
+		<a href="index2.html"><img src="./images/logo_transparent.png" class="logo" alt=""></a>
+		<div class="container">
+			<button class="ham"></button>
+			<nav  class="navbar">
+		<ul>
+			<li>
+				<a href="index2.html"><img src="./images/simbol-home.png" class="image" alt=""></a>
+			</li>
+			<li>
+				<a href="cafenea.html">Cafenea</a>
+				<ul class="sub">
+					<li><a href="echipa.html">Echipa</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="meniu.html">Meniu</a>
+				<ul class="sub">
+					<li><a href="cafea.html">Cafea</a></li>
+					<li><a href="ceai.html">Ceai</a></li>
+					<li><a href="produse.html">Produse de patiserie</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+			<li>
+				<a href="evenimente.html">Evenimente</a>
+				<ul class="sub">
+					<li><a href="rezervari.html">Rezervări</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+
+		</ul>
+	</nav>
+	</div>
+
+
+		<h2>Evenimente</h2>
+		<div class="number">
+
+		<p id="nbr1">127</p>
+	<p id="txt">Rezervări</p></div>
+
+
+			<div class="number2">
+
+			<p id="nbr2">487</p>
+			<p id="txt">Vizualizări</p></div>
+				</div>
+	</div>
+
+<div id='fullDiv'>
+	<h6>Ianuarie </h6>
+  <ul>
+    <li>Lu</li>
+    <li>Ma</li>
+    <li>Mie</li>
+    <li>Joi</li>
+    <li>Vi</li>
+    <li>Sâm</li>
+    <li>Dum</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li class="hoverDiv">6</li><div class="hiddenText">Festivalul Tea&Coffee - orele 10:00 - 17:00</div>
+    <li>7</li>
+    <li class="hoverDiv">8</li><div class="hiddenText">Late Night Show - orele 19:00 - 22:00</div>
+    <li>9</li>
+    <li class="hoverDiv">10</li><div class="hiddenText">Stand-Up Comedy & Roast - orele 12:00 - 15:00</div>
+    <li>11</li>
+    <li>12</li>
+    <li class="hoverDiv">13</li><div class="hiddenText">Teatru de cafenea - orele 12:00 - 13:00</div>
+    <li>14</li>
+    <li class="hoverDiv">15</li><div class="hiddenText">Fabrica de scurt-metraje se întoarce - orele 15:00 - 17:00</div>
+    <li>16</li>
+    <li>17</li>
+    <li class="hoverDiv">18</li><div class="hiddenText">Wine&Jazz - orele 18:00 - 21:00</div>
+    <li>19</li>
+    <li>20</li>
+    <li class="hoverDiv">21</li><div class="hiddenText">Festival de fotografie - orele 12:00 - 15:00</div>
+    <li>22</li>
+    <li class="hoverDiv">23</li><div class="hiddenText">Centenar muzical- orele 12:00 - 17:00</div>
+    <li>24</li>
+    <li>25</li>
+    <li class="hoverDiv">26</li><div class="hiddenText">Cafeneaua literară - orele 14:00 - 17:00</div>
+    <li>27</li>
+    <li>28</li>
+    <li class="hoverDiv">29</li><div class="hiddenText">Promenada muzicală - orele 13:00 - 16:00</div>
+    <li class="hoverDiv">30</li><div class="hiddenText">Noaptea Cercetătorilor - orele 18:00 - 21:00</div>
+    <li>31</li>
+
+
+		</div>
+  </ul>
+</div>
+
+
+<footer>
+
+  <img src="./images/logo_transparent.png" class="logo" alt="">
+ <ul>
+				<li><a href="index2.html">IE</a></li>
+				<li><a href="cafenea.html">Cafenea</a></li>
+				<li><a href="meniu.html">Meniu</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="evenimente.html">Evenimente</a></li>
+				 <li><a href="contact.html">Contact</a></li>
+			</ul>
+</footer>
+
+<script>
+var winHeight = $(window).height();
+var height = ( winHeight * 16.6666 ) / 100;
+var lineHeight = height + "px";
+
+$("li").css("line-height", lineHeight);
+$("li").css("height", height);
+</script><script>
+var speed = 10;
+
+/* Call this function with a string containing the ID name to
+ * the element containing the number you want to do a count animation on.*/
+function incEltNbr(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  incNbrRec(0, endNbr, elt);
+}
+
+/*A recursive function to increase the number.*/
+function incNbrRec(i, endNbr, elt) {
+  if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function() {//Delay a bit before calling the function again.
+      incNbrRec(i + 1, endNbr, elt);
+    }, speed);
+  }
+}
+
+/*Function called on button click*/
+
+
+incEltNbr("nbr1"); /*Call this funtion with the ID-name for that element to increase the number within*/
+function incNbr(){
+  incEltNbr("nbr1");
+}
+
+incEltNbr("nbr1");
+incEltNbr("nbr2"); /*Call this funtion with the ID-name for that element to increase the number within*/
+function incNbr(){
+  incEltNbr("nbr2");
+}
+
+incEltNbr("nbr2");
+</script>
+<script src="javascript/javascript-index.js"></script>
+
+</body>
+</html>

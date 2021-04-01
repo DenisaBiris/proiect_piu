@@ -1,0 +1,597 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;}
+body, html {
+   height: 100%;
+   margin: 0;
+}
+body {
+font-family:Georgia, serif;
+font-weight: bold;
+overflow-x: hidden;
+max-width: 100%;
+}
+
+.coffe-image {
+   background-image: url("./css-images/ev-image.jpg");
+   height: 300vh;
+   width: 200vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.ham{display: none;}
+
+img.logo{
+width:15%;
+left:10%;
+
+}
+
+nav{
+ width:100%;
+  top:-130px;
+  position: relative;
+   height: 60px;
+   position: relative;
+     text-align: center;
+     letter-spacing: 1px;
+justify-content: space-between;
+}
+ul{
+       padding: 0;
+       list-style: none;
+
+
+   }
+   ul li{width: 144px;
+       display: inline-block;
+       position: relative;
+       line-height: 21px;
+       text-align: left;
+       left:80px;
+
+  justify-content: space-around;
+   }
+   ul li a{
+       display: block;
+       padding: 10px 15px;
+       color: white;
+       text-decoration: none;
+       font-size: 150%;
+
+       display: flex;
+       justify-content: space-around;
+   }
+   ul li a:hover{
+       color:white;
+     text-decoration: underline;
+   }
+   ul li ul.sub{
+       min-width: 100%;
+       background: rgb(255,240,102);
+    background: linear-gradient(165deg, rgba(255,240,102,1) 0%, rgba(255,136,0,1) 65%);
+    opacity: 85%;
+       display: none;
+       position: absolute;
+       z-index: 999;
+       left: 0;
+       border-right: none;
+     border-left: none;
+     border-bottom:1px solid brown;
+     border-top: 1px solid brown;
+
+   }
+   ul li:hover ul.sub{
+       display: block;
+       width: 40px;
+   }
+   ul li ul.sub li{
+       display: block;
+       left:4px;
+
+
+   }
+   ul li ul.sub a{
+      font-size: 100%;
+      text-align: center;
+
+
+   }
+h1{ font-size: 2em;
+ left: 10px;
+ color: rgb(255, 243, 176);
+}
+h2
+{font-size: 3.5em;
+left:100px;
+color:white;
+z-index:200;
+position: relative;
+}
+.image{
+  display: inline-block;
+vertical-align: top;
+height: 40px;
+width: 40px;
+margin-top:-15px;
+}
+
+  .text1{
+  position: relative;
+  column-count: 2;
+  column-gap: 30px;
+  column-rule: 1px solid white;
+  z-index: 500;
+  left:1%;
+  top: -120vh;
+  margin-right: 20px;
+  margin-left: 20px;
+  height:100%;
+
+}
+h3{color:white;
+font-size: 2.5vh;
+text-indent: 10%;}
+
+.message{
+  position: relative;
+  background: rgb(110,89,67);
+background: linear-gradient(0deg, rgba(110,89,67,1) 31%, rgba(155,127,102,1) 83%);
+opacity: 60%;
+border-top-left-radius: 10%;
+border-top-right-radius: 10%;
+z-index:100;
+width: 100%;
+    height: 63vh;
+    top: -63vh;
+
+
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgb(204,237,148);
+background: linear-gradient(48deg, rgba(204,237,148,1) 0%, rgba(112,187,22,1) 52%);
+
+}
+
+.column:hover .overlay {
+  opacity: 85%;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+footer {
+  position:  relative;
+right: 0;
+bottom: 0;
+left: 0;
+display: flex;
+    justify-content: center;
+    align-items: center;
+   width:100%;
+   height:17;
+   background: rgb(255,240,102);
+background: linear-gradient(165deg, rgba(255,240,102,1) 0%, rgba(255,136,0,1) 65%);
+   text-align: center;
+
+}
+
+footer ul li a{
+  font-size: 1em;
+color:white;
+margin: 2%;}
+footer img.logo{
+    position: relative;
+
+
+    width: 8%;
+
+}
+footer ul{
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+::-webkit-scrollbar{display: none;}
+
+
+#fullDiv {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 10%;
+  top: 55vh;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 74%;
+height: 100%;
+}
+
+#fullDiv ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top:14vh;
+}
+
+#fullDiv li {
+  float: left;
+  display: block;
+
+    text-align: center;
+    font-size: 5vh;
+  text-align: center;
+  list-style-type: none;
+  padding: 3%;
+}
+
+#fullDiv li:nth-child(n+1):nth-child(-n+7) {
+  font-weight: 900;
+  color: #e67e22;
+}
+
+
+#fullDiv li:hover:nth-child(n+8):nth-child(-n+50){
+  border-radius: 5px;
+  background: rgb(204,237,148);
+  background: linear-gradient(48deg, rgba(204,237,148,1) 0%, rgba(112,187,22,1) 52%);
+
+  color: #ecf0f1;
+}
+#fullDiv h6{
+  font-size: 2.5em;
+top: 10vh;
+    position: relative;
+    left: 60vh;
+}
+#nbr1  {
+  font-size:7em;
+  margin:44px 0 0 0;
+  color: white;
+}
+#nbr2  {
+  font-size:7em;
+  margin:44px 0 0 0;
+  color: white;
+}
+.number {
+    position: relative;
+    top: 200vh;
+    left: 20vh;
+  color: white;
+float:left;}
+
+     #txt{
+     font-size:5em;
+      color:white;
+    }
+    .number2 {float:right;
+        position: relative;
+        top: 200vh;
+        right: 20vh;
+      color: white;}
+
+
+      .hiddenText {
+           display: none;
+           position: relative;
+    left: -100vh;
+    top: 73vh;
+    width: 200%;
+        }
+        .hoverDiv:hover + .hiddenText {
+           display: block;
+           color:rgba(112,187,22,1);
+           font-size: 22px;
+           font-weight: bold;
+        }
+
+        @media (min-width: 600px) and (max-width: 768px){
+        nav{
+          width: 65%;
+              left: -4%;
+                  top: -15vh;
+              position: relative;
+              height: 60px;
+              position: relative;
+              text-align: center;
+              letter-spacing: -0.5px;
+
+            }
+        .ham{display: none;}
+            ul li {
+                width: 11%;}
+
+                ul li a {
+
+        padding: 11px 45px;
+
+            font-size: 114%;
+          }
+
+        h2{top:0vh;}
+
+      #fullDiv ul li {
+    width: 13%;
+}
+
+#fullDiv ul {
+
+    left: -11%;
+}
+
+        footer {
+          height: 17vh;
+          bottom: 0vh;}
+
+
+
+        footer ul li{
+          width: 85px;
+
+            left: -2%;
+
+        }
+
+        footer ul {
+            bottom: 5%;
+            width: 100%;
+            position: relative;
+            left: 0%;
+        }
+
+        footer img.logo {
+            bottom: 2%;
+            left:3%;
+            width: 15%;
+        }
+
+        #fullDiv {
+
+            left: 10%;
+            top: 70vh;
+            width: 74%;
+            height: 95%;
+        }
+        #fullDiv h6 {
+            font-size: 2.5em;
+            top: 10vh;
+
+            left: 30vh;
+        }
+
+        #fullDiv ul {
+
+    top: 20vh;
+    left: -11%;
+}
+#fullDiv ul li {
+    width: 13%;
+    font-size: 150%;
+}
+
+.number {
+
+    top: 150vh;
+    left: 5vh;
+
+}
+
+.number2 {
+    float:left;
+
+    top: 150vh;
+    right: -50vh;}
+    #txt {
+        font-size: 200%;}
+        .hiddenText {
+
+            left: -63vh;
+            top: 53vh;
+            width: 178%;
+            text-align: center;
+        }
+        #fullDiv li:nth-child(n+1):nth-child(-n+7) {
+
+            font-size: 150%;
+        }
+
+
+        }
+
+        @media (max-width: 599px){
+
+
+        .ham {
+          position: absolute;
+        z-index: 1000;
+        top: 4%;
+        /* right: 20px; */
+        left: 82%;
+        width: 6%;
+        height: 61px;
+        border: none;
+        border-radius: 50% 50% 50% 50%;
+        cursor: pointer;
+        background-color: rgb(255 195 0);
+        /* background: linear-gradient(48deg, rgb(66 99 10) 0%, rgb(133 165 94) 52%); */
+        background-image: url(https://ljc-dev.github.io/testing0/ham.svg);
+        background-size: 100%;
+        }
+        button {
+        background: rgb(255 160 0);
+        background: linear-gradient(48deg, rgba(204,237,148,1) 0%, rgba(112,187,22,1) 52%);
+
+         }
+
+
+         .showClose {
+           z-index: 1200;
+
+           background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+         }
+
+         .navbar {    opacity: 90%;
+           /* position: absolute; */
+           position: absolute; */
+             z-index: 2000;
+             top: -8%;
+         left: -7%;
+             background: linear-gradient(48deg, rgba(204,237,148,1) 0%, rgba(112,187,22,1) 52%);
+             width: 108vw;
+             height: 109%;
+             overflow: hidden;
+             color: white;
+             transform: translateY(-120%);
+             transition: transform 0.2s ease;}
+
+
+         .showNav {
+           z-index: 1000;
+           transform: translateY(0);
+         }
+
+
+         .navbar ul {
+           width: 100%;
+        height: 87%;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+
+        margin: 20% 0 0 -50%;
+        position: relative;
+        text-align: center;
+        left: 77%;
+         }
+
+         .navbar ul li a {
+           color: white;
+           padding-top: 50%;
+           padding-bottom: 50%;
+           border-bottom: 2px solid white;
+           text-decoration: none;
+           font-family: 'Open Sans', sans-serif;
+             font-size: 160%;
+           align-items: center;
+           font-weight: bold;
+           padding: 33px 36px;
+
+         }
+         .navbar ul li {
+             width: 17%;}
+
+
+        .navbar ul li a:hover {
+           border-bottom: green;
+             width: 300%;
+         }
+
+         .navbar a:hover{
+           background-color: green;
+         }
+         ul li.sub a{
+           display: none;
+         }
+
+
+        .ham{
+            top: 4%;
+            /* right: 20px; */
+            left: 82%;
+            width: 14%;
+            height: 9%;
+
+        }
+
+
+
+
+
+        footer{display:none;}
+
+        .ham{display: inherit;}
+        h2 {
+          font-size: 300%;
+    left: 6%;
+    top: 4vh;}
+    #fullDiv {
+
+left: 1%;
+top: 55vh;
+width: 74%;
+height: 50%;
+width: 98%;}
+
+                #fullDiv h6 {
+    font-size: 90%;
+    top: 6vh;
+    position: relative;
+    left: 22vh;
+}
+#fullDiv li {
+
+      font-size: 140%;
+    width: 13%;
+    padding: 0%;
+}
+.hiddenText {
+
+    left: -45vh;
+    top: 25vh;
+    font-size: 30vh;
+  width: 190%;
+}
+            #fullDiv ul {
+
+                top: 10vh;
+            left: -10vh;
+            }
+            .number {
+
+                top: 88vh;
+                left: 13vh;
+
+            }
+            #txt {
+    font-size: 3em;}
+
+            .number2 {
+    float:left;
+
+    top: 171vh;
+    left: -24vh;
+
+}
+ul li ul.sub {
+
+    left: 180%;}
+        }
